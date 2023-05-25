@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader</title>
+    <style>
+      .loading-layer {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .loading-layer {
+        background-color: rgba(0, 0, 0, 0.2);
+        bottom: 0;
+        height: auto;
+        width: auto;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 9999 !important;
+        display: block !important;
+      }
+      body {
+        background: #f9f9f9;
+        color: #7d7e8a;
+        font-family: "Poppins", sans-serif;
+        line-height: 2;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .page-loading-spinner-v3 {
+        bottom: 0;
+        height: auto;
+        width: auto;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 9999 !important;
+        display: block !important;
+      }
+
+      .page-loading-spinner-v3 .ring {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        transform: scale(0.79);
+      }
+      .page-loading-spinner-v3 .ring > div {
+        position: absolute;
+        display: block;
+        width: 160px;
+        height: 160px;
+        top: 20px;
+        left: 20px;
+        border-radius: 80px;
+        box-shadow: 0 6px 0 0 #fff;
+        animation: ring-animation 1s linear infinite;
+      }
+
+      @keyframes ring-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-layer">
+      <div class="page-loading-spinner-v3">
+        <div class="ring"><div></div></div>
+      </div>
+    </div>
+  </body>
+</html>
